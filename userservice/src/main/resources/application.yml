@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: userservice
+  datasource:
+    url: jdbc:postgresql://fitness-sarimxahid123-7a0a.e.aivencloud.com:25643/defaultdb?sslmode=require
+    username: avnadmin
+    password: AVNS_uDdVbubU2Lv_x4DPVre
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
