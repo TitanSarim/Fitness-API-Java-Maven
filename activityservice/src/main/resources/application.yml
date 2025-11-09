@@ -3,8 +3,8 @@ spring:
     name: activity-service
   data:
     mongodb:
-      uri: mongodb+srv://sarimxahid:1412@cluster0.kaxoprv.mongodb.net/fitnessactivity
-      database: fitnessactivity
+      uri: 
+      database: 
 
 server:
   port: 8081
