@@ -4,12 +4,14 @@ import dto.RegisterRequest;
 import dto.UserResponse;
 import jakarta.validation.Valid;
 import jdk.jshell.spi.ExecutionControl;
+import lombok.extern.slf4j.Slf4j;
 import model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import repository.UserRepository;
 
 @Service
+@Slf4j
 public class UserService {
 
     @Autowired
@@ -54,6 +56,7 @@ public class UserService {
     }
 
     public Boolean existByUserId(String userId) {
+        log.info("Calling user validation API for userId: {}", userId);
         return repository.existsById(userId);
     }
 }
